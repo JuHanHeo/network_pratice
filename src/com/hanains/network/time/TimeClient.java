@@ -20,7 +20,7 @@ public class TimeClient {
 //			System.out.println("현재 시간을 알고 싶으면 아무거나 전송하시오.");
 //			System.out.print(">>");
 //			String message = scanner.nextLine();
-			String message = "시간좀 알려줘";
+			String message = "";
 			
 			byte[] sendData = message.getBytes("utf-8");
 			DatagramPacket packet = new DatagramPacket(sendData, sendData.length, new InetSocketAddress(SERVER_IP, PORT));
